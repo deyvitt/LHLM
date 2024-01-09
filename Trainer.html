@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Include TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1em;
+    }
+
+    input[type="file"], input[type="text"] {
+      display: block;
+      margin-bottom: 1em;
+    }
+
+    button {
+      padding: 0.5em 1em;
+      font-size: 1em;
+      color: white;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      background-color: #ccc;
+    }
+
+    #status {
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Train your Language Model</h1>
+    <p>Select your dataset:</p>
+    <input type="file" id="data-file" multiple>
+    <p>Or enter a URL:</p>
+    <input type="text" id="data-url">
+    <button id="train-button">Train</button>
+    <p id="status"></p>
+  </div>
+  <script src="train.js"></script>
+</body>
+</html>

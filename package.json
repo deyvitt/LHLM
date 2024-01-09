@@ -1,0 +1,14 @@
+{
+    "name": "your-project-name",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "model.js",
+    "scripts": {
+        "start": "node model.js"
+    },
+    "dependencies": {
+        "@tensorflow/tfjs": "^3.21.0",
+        "node-fetch": "^3.3.2",
+        "prompt-sync": "^4.2.0"
+    }
+}
